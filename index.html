@@ -23,7 +23,8 @@
       <img
         src="./assets/images/vikingShieldsSmall.jpg"
         alt="A pair of viking shields
-      sitting under a tree"
+        sitting under a tree"
+        id="hero-picture"
         height="1275px"
         width="923px"
       />
@@ -31,29 +32,50 @@
     <div class="signup-section">
       <h2>
         This is not a real service! You know you need something like this in
-        your life to help you realise your deepest dreams. Sign up <em>now</em>
+        your life to help you realise your deepest dreams. Sign up
+        <em>now</em>
         to get started
       </h2>
       <h2>You <em>know</em> you want to.</h2>
-    </div>
-    <form action="https://example.com">
-      <fieldset>
-        <legend>Let's do this!</legend>
-        <label for="first-name">FIRST NAME</label>
-        <input type="text" name="first-name" />
-        <label for="last-name">LAST NAME</label>
-        <input type="text" name="last-name" />
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" />
-        <label for="phone">PHONE NUMBER</label>
-        <input type="tel" name="phone" />
-        <label for="password">PASSWORD</label>
-        <input type="password" name="password" />
-        <label for="confirm">CONFIRM PASSWORD</label>
-        <input type="password" name="confirm" />
-      </fieldset>
-      <button type="submit">Create Account</button>
+      <form action="https://example.com">
+        <div class="signup-form">
+          <fieldset>
+            <legend>Let's do this!</legend>
+            <div class="input-row">
+              <div class="input-section">
+                <label for="first-name">FIRST NAME</label><br />
+                <input type="text" name="first-name" id="first-name" />
+              </div>
+              <div class="input-section">
+                <label for="last-name">LAST NAME</label><br />
+                <input type="text" name="last-name" id="last-name" />
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="input-section">
+                <label for="email">EMAIL</label><br />
+                <input type="email" name="email" />
+              </div>
+              <div class="input-section">
+                <label for="phone">PHONE NUMBER</label><br />
+                <input type="tel" name="phone" id="phone" />
+              </div>
+            </div>
+            <div class="input-row">
+              <div class="input-section">
+                <label for="password">PASSWORD</label><br />
+                <input type="password" name="password" id="password" />
+              </div>
+              <div class="input-section">
+                <label for="confirm">CONFIRM PASSWORD</label><br />
+                <input type="password" name="confirm" id="confirm" />
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <button type="submit">Create Account</button>
+      </form>
       <p>Already have an account? <a href="https://example.com">Log in</a></p>
-    </form>
+    </div>
   </body>
 </html>
