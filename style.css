@@ -27,6 +27,7 @@ h1 {
 h2 {
   padding-right: 340px;
   margin-bottom: 5rem;
+  line-height: 2rem;
 }
 
 button {
@@ -114,7 +115,7 @@ fieldset {
   justify-content: center;
   align-items: center;
   background-color: black;
-  opacity: 0.85;
+  opacity: 0.75;
   height: 203px;
   padding: 12px 0;
   position: absolute;

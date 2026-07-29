@@ -37,7 +37,8 @@
         to get started<br /><br />
         You <em>know</em> you want to.
       </h2>
-      <form action="https://example.com">
+      <!-- Make sure this is running before submitting -->
+      <form action="http://test.home:4242/post" method="post">
         <div class="signup-form">
           <fieldset>
             <legend>Let's do this!</legend>
@@ -58,17 +59,22 @@
               </div>
               <div class="input-section">
                 <label for="phone">PHONE NUMBER</label><br />
-                <input type="tel" name="phone" id="phone" />
+                <input type="tel" name="phone" id="phone" pattern="0[0-9]{9}" />
               </div>
             </div>
             <div class="input-row">
               <div class="input-section">
                 <label for="password">PASSWORD</label><br />
-                <input type="password" name="password" id="password" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  minlength="8"
+                />
               </div>
               <div class="input-section">
                 <label for="confirm">CONFIRM PASSWORD</label><br />
-                <input type="password" name="confirm" id="confirm" />
+                <input type="password" name="confirm" id="confirm" required />
               </div>
             </div>
           </fieldset>
