@@ -1,3 +1,32 @@
+@font-face {
+  font-family: "Norse";
+  src: url("./assets/fonts/Norse.otf");
+}
+
 body {
-  background: green;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Norse";
+  color: white;
+  font-size: 6rem;
+}
+
+.title-bar {
+  background: hsl(360 2% 2%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0.83;
+  position: absolute;
+  height: 203px;
+  width: 100%;
+  top: 15%;
+}
+
+.image-section {
+  display: flex;
+  position: absolute;
 }
